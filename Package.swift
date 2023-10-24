@@ -25,6 +25,9 @@ let package = Package(
                     url:"https://eid-librerias-ios.s3.eu-west-1.amazonaws.com/VideoID-sdk/1.8.0/VideoIDSDK.xcframework.zip",
                     checksum: "d8ef54e5bd8a1b14113f01fc7c86bf20f2846a64c6b678afa2fe1a6adcd62a1f"),
         .target(name: "_VideoIDSDKStub",
-               dependencies: dependencies)
+                dependencies: dependencies,
+                linkerSettings: [
+                    .linkedFramework("Lottie")
+                ])
     ]
 )
