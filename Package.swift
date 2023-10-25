@@ -17,7 +17,7 @@ let package = Package(
             targets: ["VideoIDSDK", "_VideoIDSDKStub"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.0.1"),
+        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.1.3"),
         .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", from: "1.1.2000"),
         .package(url: "https://gitlab.electronicid.eu/eid-public/eid-sdk/eidwebrtc-spm", from: "1.1.35")
     ],
