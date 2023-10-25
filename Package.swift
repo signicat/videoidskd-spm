@@ -5,7 +5,7 @@ import PackageDescription
 
 let dependencies: [Target.Dependency] = [
     .product(name: "WebRTC", package: "eidwebrtc-spm"),
-    .product(name: "Lottie", package: "lottie-ios"),
+    .product(name: "Lottie", package: "lottie-spm"),
     .product(name: "OpenSSL", package: "OpenSSL")
 ]
 
@@ -18,7 +18,7 @@ let package = Package(
             targets: ["VideoIDSDK", "_VideoIDSDKStub"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.0.1"),
+        .package(url: "https://github.com/airbnb/lottie-spm.git", from: "4.0.1"),
         .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", from: "1.1.2000"),
         .package(url: "https://gitlab.electronicid.eu/eid-public/eid-sdk/eidwebrtc-spm", from: "1.1.35")
     ],
