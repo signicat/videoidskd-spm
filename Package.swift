@@ -3,6 +3,9 @@
 
 import PackageDescription
 
+let version: String = "1.13.0"
+let checksum: String = "2aee3be441b90b3801492cce090489d98aad2db93a65dcf86d7617343624b132"
+
 let dependencies: [Target.Dependency] = [
     .product(name: "WebRTC", package: "eidwebrtc-spm"),
     .product(name: "Lottie", package: "lottie-spm"),
@@ -24,9 +27,10 @@ let package = Package(
     targets: [
         .binaryTarget(
                     name: "VideoIDSDK",
-                    url:"https://eid-librerias-ios.s3.eu-west-1.amazonaws.com/VideoID-sdk/1.11.0/VideoIDSDK.xcframework.zip",
-                    checksum: "2a1e6d7d4352bb7913a6f7551a8a7d753269c52bb10493ba075bfda3eb4b5fcb"),
+                    url:"https://eid-librerias-ios.s3.eu-west-1.amazonaws.com/VideoID-sdk/\(version)/VideoIDSDK.xcframework.zip",
+                    checksum: checksum),
         .target(name: "_VideoIDSDKStub",
                 dependencies: dependencies)
     ]
 )
+
