@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/signicat/eidwebrtc-spm",
       "state" : {
-        "branch" : "feature/VID-7398-change-gihub-repository",
-        "revision" : "678ec9c33e40cbf53f2d23a01d81e4cbf3854143"
+        "revision" : "0e3314759ba18868de38d2d376177abb0b6689d3",
+        "version" : "1.1.37"
       }
     },
     {

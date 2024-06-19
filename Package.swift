@@ -23,7 +23,8 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.4.3"),
         .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", from: "3.1.5004"),
-        .package(url: "https://github.com/signicat/eidwebrtc-spm", branch: "feature/VID-7398-change-gihub-repository")
+        .package(url: "https://github.com/signicat/eidwebrtc-spm", from: "1.1.37")
+
     ],
     targets: [
         .binaryTarget(
