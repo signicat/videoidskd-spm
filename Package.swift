@@ -3,8 +3,8 @@
 
 import PackageDescription
 
-let version: String = "1.19.0"
-let checksum: String = "f25fe92c3f80e054d274f1fe6b36addd1c6a41b3bc6706ce3e647a66e9ee49ff"
+let version: String = "1.21.0"
+let checksum: String = "c92ca9c9c28992e24c3b441bdd5b913fb69e8d7eeb27a309c722325eb89437c4"
 
 let dependencies: [Target.Dependency] = [
     .product(name: "WebRTC", package: "eidwebrtc-spm"),
@@ -14,15 +14,17 @@ let dependencies: [Target.Dependency] = [
 
 let package = Package(
     name: "VideoIDSDK",
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "VideoIDSDK",
             targets: ["VideoIDSDK", "_VideoIDSDKStub"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.1.3"),
-        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", from: "1.1.2000"),
-        .package(url: "https://gitlab.electronicid.eu/eid-public/eid-sdk/eidwebrtc-spm", from: "1.1.35")
+        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.4.3"),
+        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", from: "3.1.5004"),
+        .package(url: "https://github.com/signicat/eidwebrtc-spm", from: "1.1.37")
+
     ],
     targets: [
         .binaryTarget(
