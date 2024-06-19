@@ -3,10 +3,10 @@
     {
       "identity" : "eidwebrtc-spm",
       "kind" : "remoteSourceControl",
-      "location" : "https://gitlab.electronicid.eu/eid-public/eid-sdk/eidwebrtc-spm",
+      "location" : "https://github.com/signicat/eidwebrtc-spm",
       "state" : {
-        "revision" : "1351ca17cedc9a8fc2df9ea12ddf796f9b1e2ca5",
-        "version" : "1.1.35"
+        "branch" : "feature/VID-7398-change-gihub-repository",
+        "revision" : "678ec9c33e40cbf53f2d23a01d81e4cbf3854143"
       }
     },
     {
