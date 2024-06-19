@@ -20,8 +20,8 @@ let package = Package(
             targets: ["VideoIDSDK", "_VideoIDSDKStub"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.1.3"),
-        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", from: "1.1.2000"),
+        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.4.3"),
+        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", from: "3.1.5004"),
         .package(url: "https://github.com/signicat/eidwebrtc-spm", branch: "feature/VID-7398-change-gihub-repository")
     ],
     targets: [
