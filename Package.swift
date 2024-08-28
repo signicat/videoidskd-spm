@@ -3,8 +3,8 @@
 
 import PackageDescription
 
-let version: String = "1.24.0-beta"
-let checksum: String = "224a2a41659416f280956eed13a78de34b30c0a731dbdca2b7538d3b447dd716"
+let version: String = "rebranding"
+let checksum: String = "93ca783bdaf79d4b251726ce94c50274793fb76aacca9ad3a4cf67d8dc64ee46"
 
 let dependencies: [Target.Dependency] = [
     .product(name: "WebRTC", package: "eidwebrtc-spm"),
