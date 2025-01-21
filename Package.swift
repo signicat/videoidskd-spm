@@ -14,6 +14,7 @@ let dependencies: [Target.Dependency] = [
 
 let package = Package(
     name: "VideoIDSDK",
+    platforms: [.iOS("15.0")],
     products: [
         .library(
             name: "VideoIDSDK",
