@@ -3,13 +3,12 @@
 
 import PackageDescription
 
-let version: String = "1.30.0"
-let checksum: String = "c1105ed70f2b04a5f99099b29f3c6c06611fbfc53234b6370e167c316f478790"
+let version: String = "1.35.0"
+let checksum: String = "9ab9b8c68695dd9678a310bca49f5444ea89e090c23cbbd4346128cba8e4dd8e"
 
 let dependencies: [Target.Dependency] = [
-    .product(name: "WebRTC", package: "eidwebrtc-spm"),
-    .product(name: "Lottie", package: "lottie-spm"),
-    .product(name: "OpenSSL", package: "OpenSSL")
+    .product(name: "WebRTC", package: "WebRTC"),
+    .product(name: "Lottie", package: "lottie-spm")
 ]
 
 let package = Package(
@@ -22,8 +21,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.4.3"),
-        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", from: "3.2.2000"),
-        .package(url: "https://github.com/signicat/eidwebrtc-spm", from: "1.1.37")
+        .package(url: "https://github.com/stasel/WebRTC.git", from: "134.0.0")
     ],
     targets: [
         .binaryTarget(
