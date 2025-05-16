@@ -3,8 +3,8 @@
 
 import PackageDescription
 
-let version: String = "1.30.0"
-let checksum: String = "c1105ed70f2b04a5f99099b29f3c6c06611fbfc53234b6370e167c316f478790"
+let version: String = "1.37.2"
+let checksum: String = "77148e772252172cec66a1a65d5a46bc7dbb8f209c47ce1be6de4140b772e077"
 
 let dependencies: [Target.Dependency] = [
     .product(name: "WebRTC", package: "eidwebrtc-spm"),
@@ -14,7 +14,6 @@ let dependencies: [Target.Dependency] = [
 
 let package = Package(
     name: "VideoIDSDK",
-    platforms: [.iOS("15.0")],
     products: [
         .library(
             name: "VideoIDSDK",
