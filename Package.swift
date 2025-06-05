@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version: String = "1.35.0"
+let sdkVersion: String = "1.35.0"
 let checksum: String = "9ab9b8c68695dd9678a310bca49f5444ea89e090c23cbbd4346128cba8e4dd8e"
 
 let dependencies: [Target.Dependency] = [
@@ -13,7 +13,9 @@ let dependencies: [Target.Dependency] = [
 
 let package = Package(
     name: "VideoIDSDK",
-    platforms: [.iOS("15.0")],
+    platforms: [.iOS("15.0"),
+                .macOS(.v10_15)
+    ],
     products: [
         .library(
             name: "VideoIDSDK",
@@ -26,12 +28,15 @@ let package = Package(
     targets: [
         .binaryTarget(
                     name: "VideoIDSDK",
-                    url:"https://eid-librerias-ios.s3.eu-west-1.amazonaws.com/VideoID-sdk/\(version)/VideoIDSDK.xcframework.zip",
+                    url:"https://eid-librerias-ios.s3.eu-west-1.amazonaws.com/VideoID-sdk/\(sdkVersion)/VideoIDSDK.xcframework.zip",
                     checksum: checksum),
-        .target(name: "_VideoIDSDKStub",
-                dependencies: dependencies)
+        .target(
+            name: "_VideoIDSDKStub",
+            dependencies: dependencies,
+            swiftSettings: [
+                .define("PLATFORM_IOS_ONLY", .when(platforms: [.iOS]))
+            ]
+        )
     ]
 )
-
-
 
