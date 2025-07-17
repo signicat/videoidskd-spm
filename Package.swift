@@ -3,8 +3,8 @@
 
 import PackageDescription
 
-let sdkVersion: String = "1.39.0"
-let checksum: String = "86ab090ac5a0bebcccb48544192a5f989dd31bd2a439195a1f81d2fe1e96bc44"
+let sdkVersion: String = "1.40.0"
+let checksum: String = "c1a5371922edf182fd94184262a8eac091bac92b628d4505bf23b9ffaae00c8e"
 
 let dependencies: [Target.Dependency] = [
     .product(name: "WebRTC", package: "WebRTC"),
