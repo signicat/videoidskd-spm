@@ -4,7 +4,7 @@
 import PackageDescription
 
 let version: String = "REPLACE_VERSION"
-let url_version: String = "REPLACE_URL_VERSION"
+let urlVersion: String = "REPLACE_URL_VERSION"
 let checksum: String = "REPLACE_CHECKSUM"
 
 let dependencies: [Target.Dependency] = [
@@ -31,7 +31,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "VideoIDSDK",
-            url: "https://eid-librerias-ios.s3.eu-west-1.amazonaws.com/VideoID-sdk/\(url_version)/VideoIDSDK.xcframework.zip",
+            url: "https://eid-librerias-ios.s3.eu-west-1.amazonaws.com/VideoID-sdk/\(urlVersion)/VideoIDSDK.xcframework.zip",
             checksum: checksum),
         .target(name: "_VideoIDSDKStub",
                 dependencies: dependencies,
