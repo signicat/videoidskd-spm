@@ -4,11 +4,11 @@
 import PackageDescription
 
 let version: String = "1.46.0-RC"
-let url_version: String = "1.46.0"
-let checksum: String = "9a995ebb7ffdf3d6a6b8bd852b167761edfeb4533fb3b71d3abdda7c08c82c4a"
+let urlVersion: String = "1.46.0"
+let checksum: String = "a09716393013167c532491fb05ec0c2c469d643cc17b4087f1b6b86da5eb06b6"
 
 let dependencies: [Target.Dependency] = [
-    .product(name: "WebRTC", package: "eidwebrtc-spm"),
+    .product(name: "WebRTC", package: "WebRTC"),
     .product(name: "Lottie", package: "lottie-spm"),
     .product(name: "OpenSSL", package: "OpenSSL")
 ]
@@ -31,7 +31,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "VideoIDSDK",
-            url: "https://eid-librerias-ios.s3.eu-west-1.amazonaws.com/VideoID-sdk/\(url_version)/VideoIDSDK.xcframework.zip",
+            url: "https://eid-librerias-ios.s3.eu-west-1.amazonaws.com/VideoID-sdk/\(urlVersion)/VideoIDSDK.xcframework.zip",
             checksum: checksum),
         .target(name: "_VideoIDSDKStub",
                 dependencies: dependencies,
