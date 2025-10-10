@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "eidwebrtc-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/signicat/eidwebrtc-spm",
+      "state" : {
+        "revision" : "0e3314759ba18868de38d2d376177abb0b6689d3",
+        "version" : "1.1.37"
+      }
+    },
+    {
       "identity" : "lottie-spm",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/airbnb/lottie-spm.git",
@@ -10,12 +19,12 @@
       }
     },
     {
-      "identity" : "webrtc",
+      "identity" : "openssl",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/stasel/WebRTC.git",
+      "location" : "https://github.com/krzyzanowskim/OpenSSL.git",
       "state" : {
-        "revision" : "5b2eb61cace7d62726b29a38b768b07d6bc55c45",
-        "version" : "134.0.0"
+        "revision" : "623c84da314e85363236507ca38a4bde65df21c3",
+        "version" : "3.3.3001"
       }
     }
   ],
