@@ -5,7 +5,7 @@ import PackageDescription
 
 let version: String = "1.46.0-RC"
 let urlVersion: String = "1.46.0"
-let checksum: String = "9a6632053d4644e5876c0bff14215d08b768e9e877da6744012743b2f57a38f7"
+let checksum: String = "23fadca81724197c2cfe3269dc50d9f24702debbd1ba69d22c6c9013caa8dc7b"
 
 let dependencies: [Target.Dependency] = [
     .product(name: "WebRTC", package: "WebRTC"),
@@ -40,9 +40,3 @@ let package = Package(
                 ])
     ]
 )
-
-
-
-
-//checksum of downloaded artifact of binary target 'VideoIDSDK' (9a6632053d4644e5876c0bff14215d08b768e9e877da6744012743b2f57a38f7) does not match checksum specified by the manifest (23fadca81724197c2cfe3269dc50d9f24702debbd1ba69d22c6c9013caa8dc7b)
-
