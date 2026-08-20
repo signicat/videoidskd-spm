@@ -3,10 +3,10 @@
 
 import PackageDescription
 
-let version: String = "26.30.0-RC"
-let urlVersion: String = "26.30.0"
-let checksum: String = "4ab31b9397f9dcdcd17de8e27b98aeee16e78b1f723b1b311f5ecf2d19694954"
-let catnipVersion = Version(0, 0, 9)
+let version: String = "26.34.2-RC"
+let urlVersion: String = "26.34.2"
+let checksum: String = "075362f029efc2896b7cf34492c3cbc6e15dede583ae152063bcb4260783825e"
+let catnipVersion = Version(0, 0, 10)
 
 let dependencies: [Target.Dependency] = [
     .product(name: "Catnip", package: "catnip-spm"),
